@@ -15,7 +15,7 @@
                     <div class="left-header">
                         <ul class="navi-level-1">
                             <!-- <li><a href="index.html" class="logo"><img src="images/Header/logo.png" class="img-responsive" alt="Image"></a></li> -->
-                            <li><a href="#"><h5 style="margin: auto; border-right: 3px solid yellow; padding-right: 10px;">Flips~Home</h5></a></li>
+                            <li><a href="#"><h5 style="margin: auto; border-right: 3px solid #aa6c39; padding-right: 10px;">Flips~Home</h5></a></li>
                         </ul>
                     </div><!-- End Left Header -->
                     <nav>
