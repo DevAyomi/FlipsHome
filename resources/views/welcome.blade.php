@@ -693,8 +693,8 @@
 
                 <footer class="footer-v1">
                     <div class="footer-left">
-                        <a href="index.html">
-                            <h4>FlipsHome</h4>
+                        <a href="{{ url('/') }}">
+                            <h3 style="color: white; font-style: sans-serif; margin: auto;">FlipsHome</h3>
                         </a>
                     </div>
                     <!-- End Left Footer -->
