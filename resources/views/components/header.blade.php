@@ -43,7 +43,7 @@
 
                             <!-- Testing Search Box -->  
                              <li >
-                               <a href="{{ url('/login') }}">Admin Login</a>
+                               <a href="{{ url('/login') }}">Admin</a>
                             </li>
                             <li>
                                 <a href="#/"  class="mm-toggle">

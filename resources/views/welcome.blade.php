@@ -694,7 +694,7 @@
                 <footer class="footer-v1">
                     <div class="footer-left">
                         <a href="index.html">
-                            <img src="{{asset('backend/images/Header/logo-invest.png')}}" class="img-responsive" alt="Image">
+                            <h4>FlipsHome</h4>
                         </a>
                     </div>
                     <!-- End Left Footer -->
