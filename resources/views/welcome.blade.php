@@ -79,7 +79,7 @@
                                      data-transform_in="y:80px;opacity:0;s:800;e:easeInOutCubic;" 
                                      data-transform_out="y:80px;opacity:0;s:300;" 
                                      data-start="1400" 
-                                    >Construction Company
+                                    >Company
                                 </div>
                                 
                                 <!-- LAYER NR. 3 -->
@@ -119,7 +119,7 @@
                                      data-transform_out="y:-80px;opacity:0;s:300;" 
                                 
                                      data-start="1000"                                          
-                                    >Insight of brains
+                                    >Home of beauty and
                                 </div>
                                 <!-- LAYER NR. 2 -->
                                 <div class="tp-caption heading-1 white-text text-cap "                      
@@ -128,7 +128,7 @@
                                      data-transform_in="y:80px;opacity:0;s:800;e:easeInOutCubic;" 
                                      data-transform_out="y:80px;opacity:0;s:300;" 
                                      data-start="1400" 
-                                    >Interior Construction
+                                    >Passion
                                 </div>
                                 
                                 <!-- LAYER NR. 3 -->
@@ -169,7 +169,7 @@
                                      data-transform_out="y:-80px;opacity:0;s:300;" 
                                 
                                      data-start="1000"                                          
-                                    >bedroom interior
+                                    >Creativty is our power
                                 </div>
                                 <!-- LAYER NR. 2 -->
                                 <div class="tp-caption heading-1 white-text text-cap "                      

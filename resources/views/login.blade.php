@@ -33,14 +33,18 @@
     <div class="login-page-wrap">
         <div class="login-page-content">
             <div class="login-box">
+                <div class="m-4">
+                    <a class="btn btn-primary" href="{{ url('/') }}">Back to home</a>
+                </div>
                 <div class="item-logo">
                     <!-- <img src="img/logo2.png" alt="logo"> -->
-                    <h3>FLips~Home</h3>
+                    <h3>Flips~Home</h3>
                 </div>
-                <form action="index.html" class="login-form">
+                
+                <form action="" method="post" class="login-form">
                     <div class="form-group">
-                        <label>Username</label>
-                        <input type="text" placeholder="Enter usrename" class="form-control">
+                        <label>Email</label>
+                        <input type="email" placeholder="Enter email" class="form-control">
                         <i class="far fa-envelope"></i>
                     </div>
                     <div class="form-group">

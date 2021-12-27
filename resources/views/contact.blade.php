@@ -77,13 +77,18 @@
 		    				<div class="col-md-12 ">
 		    					<div class="left-contact contact-form-1-cols">
 		    						<h3 class="text-cap"> Send Us a Message</h3>
-		          					<form class="form-inline form-contact-arc" name="contact" method="post" action="">
+		    						<div>
+		    							<div id="res"></div>
+		    						</div>
+		    						<br>
+		          					<form class="form-inline form-contact-arc" id="contact-frm" name="contact" method="post" action="{{ route('contact-frm') }}">
+		          						<input type="hidden" name="_token" id="token" value=" {{ @csrf_token() }} ">
 		            					<div class="row">
 		        							  <div class="form-group col-md-4 ">
-		        							    <input type="text" class="form-control" name="yourName" id="yourName" placeholder="Your Name">
+		        							    <input type="text" class="form-control" name="name" id="name" placeholder="Your Name">
 		        							  </div>
 		        							  <div class="form-group col-md-4">
-		        							    <input type="email" class="form-control" name="yourEmail" id="yourEmail" placeholder="Your Email" >
+		        							    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" >
 		        							  </div>
 		        							  <div class="form-group col-md-4">
 		        							    <input type="text" class="form-control" name="desription" id="description" placeholder="Desription" >
@@ -91,7 +96,7 @@
 		      						    </div>
 		      						    <div class="input-content padding-top-20">
 		        						  	<div class="form-group form-textarea">
-		        					  			<textarea id="textarea" class="form-control" name="comments" rows="6" placeholder="Your Messages" ></textarea>
+		        					  			<textarea id="message" class="form-control" name="message" rows="6" placeholder="Your Messages" ></textarea>
 		        						  	</div>
 		        						  </div>
 		                      			<button  class="ot-btn btn-main-color btn-long text-cap btn-submit">Send Mail</button>
@@ -183,6 +188,30 @@
 	                background:     ['#FFFFFF']
 	            });
 	})(jQuery);
+	</script>
+
+	<script>
+		$(document).ready(function(){
+			$("#contact-frm").submit(function(e){
+				e.preventDefault();
+				let url = $(this).attr('action');
+				console.log("Working Properly")
+				
+				$.post(url, {
+					'_token': $('#token').val(),
+					name: $('#name').val(),
+					email: $('#email').val(),
+					description: $('#description').val(),
+					message: $('#message').val(),
+				},
+				 function(response){
+					if(response.code == 400){
+						let error = '<span class="alert alert-danger pb-3">'+response.msg+'</span>';
+						$("#res").html(error);
+					}
+				})
+			});
+		});
 	</script>
 
  	<!-- Global Js
